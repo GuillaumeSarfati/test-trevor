@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/GuillaumeSarfati/test-travis/issues"
   },
-  "homepage": "https://github.com/GuillaumeSarfati/test-travis#readme"
+  "homepage": "https://github.com/GuillaumeSarfati/test-travis#readme",
+  "dependencies": {
+    "async": "^2.4.1"
+  }
 }
