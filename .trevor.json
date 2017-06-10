@@ -1,1 +1,10 @@
-{}
+{
+  "flow": [
+    {
+      "cmd": "npm install",
+      "options": {
+        "cwd": "/Users/guillaume/Documents/docker/test-travis"
+      }
+    }
+  ]
+}
