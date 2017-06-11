@@ -5,6 +5,12 @@
       "options": {
         "cwd": "/Users/guillaume/Documents/docker/test-travis"
       }
+    },
+    {
+      "cmd": "npm start",
+      "options": {
+        "cwd": "/Users/guillaume/Documents/docker/test-travis"
+      }
     }
   ]
 }
