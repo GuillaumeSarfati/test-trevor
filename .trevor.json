@@ -1,16 +1,6 @@
 {
   "flow": [
-    {
-      "cmd": "npm install",
-      "options": {
-        "cwd": "/Users/guillaume/Documents/docker/test-travis"
-      }
-    },
-    {
-      "cmd": "npm start",
-      "options": {
-        "cwd": "/Users/guillaume/Documents/docker/test-travis"
-      }
-    }
+    {"cmd": "npm install"},
+    {"cmd": "npm start"}
   ]
 }
