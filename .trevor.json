@@ -1,4 +1,6 @@
 {
+  "image": "ubuntu:latest",
+  "workdir": "/var/www",
   "flow": [
     {"cmd": "pwd"},
     {"cmd": "npm install"},
