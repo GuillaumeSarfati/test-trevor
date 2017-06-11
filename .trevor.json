@@ -1,5 +1,6 @@
 {
   "flow": [
+    {"cmd": "pwd"},
     {"cmd": "npm install"},
     {"cmd": "npm start"}
   ]
