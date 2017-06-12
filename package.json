@@ -1,0 +1,22 @@
+{
+  "name": "ex8",
+  "version": "1.0.0",
+  "description": "TRAVIS TEST HELLO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuillaumeSarfati/test-travis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuillaumeSarfati/test-travis/issues"
+  },
+  "homepage": "https://github.com/GuillaumeSarfati/test-travis#readme",
+  "dependencies": {
+    "async": "^2.4.1"
+  }
+}
