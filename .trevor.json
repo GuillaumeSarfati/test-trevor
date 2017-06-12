@@ -3,7 +3,6 @@
   "workdir": "/var/www",
   "flow": [
     {"cmd": "pwd"},
-    {"cmd": "npm install"},
-    {"cmd": "npm start"}
+    {"cmd": "npm install"}
   ]
 }
