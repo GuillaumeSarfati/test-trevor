@@ -1,8 +1,26 @@
 {
   "image": "ubuntu:latest",
   "workdir": "/var/www",
-  "flow": [
-    {"cmd": "pwd"},
-    {"cmd": "npm install"}
-  ]
+
+  "pull-request#open": {
+    "domain": "test-travis-$pull-request-id.faste.ai",
+    "env": {
+      "NODE_ENV": "staging",
+    },
+    "flow": [
+      {"cmd": "pwd"},
+      {"cmd": "npm install"}
+    ]
+  },
+
+  "pull-request#merge": {
+    "domain": "test-travis.faste.ai",
+    "env": {
+      "NODE_ENV": "production",
+    },
+    "flow": [
+      {"cmd": "pwd"},
+      {"cmd": "npm install"}
+    ]
+  }
 }
