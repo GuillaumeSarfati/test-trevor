@@ -1,8 +1,20 @@
 {
   "image": "madkom/node-npm",
   "workdir": "/var/www",
-  "flow": [
-    {"cmd": "pwd"},
-    {"cmd": "npm install"}
-  ]
+  "hooks": {
+    "deployment": {
+      "domain": "test.faste.ai",
+      "flow": [
+        {"cmd": "pwd"},
+        {"cmd": "npm install"}
+      ]
+    },
+    "pull_request": {
+      "domain": "$sha.faste.ai",
+      "flow": [
+        {"cmd": "pwd"},
+        {"cmd": "npm install"}
+      ]
+    }
+  }
 }
