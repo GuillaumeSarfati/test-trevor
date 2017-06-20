@@ -1,26 +1,17 @@
 {
-  "image": "ubuntu:latest",
+  "image": "madkom/node-npm",
   "workdir": "/var/www",
-
-  "pull-request#open": {
-    "domain": "test-travis-$pull-request-id.faste.ai",
-    "env": {
-      "NODE_ENV": "staging",
-    },
+  "expose": 3000,
+  "pull_request#open": {
+    "domain": "$repository.$branch.faste.ai",
     "flow": [
-      {"cmd": "pwd"},
       {"cmd": "npm install"}
     ]
   },
-
-  "pull-request#merge": {
-    "domain": "test-travis.faste.ai",
-    "env": {
-      "NODE_ENV": "production",
-    },
+  "pull_request#merge": {
+    "domain": "test.faste.ai",
     "flow": [
-      {"cmd": "pwd"},
       {"cmd": "npm install"}
     ]
-  }
+  },
 }
