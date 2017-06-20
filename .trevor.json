@@ -1,8 +1,17 @@
 {
   "image": "madkom/node-npm",
   "workdir": "/var/www",
-  "flow": [
-    {"cmd": "pwd"},
-    {"cmd": "npm install"}
-  ]
+  "expose": 3000,
+  "pull_request#open": {
+    "domain": "$repository.$branch.faste.ai",
+    "flow": [
+      {"cmd": "npm install"}
+    ]
+  },
+  "pull_request#merge": {
+    "domain": "test.faste.ai",
+    "flow": [
+      {"cmd": "npm install"}
+    ]
+  },
 }
